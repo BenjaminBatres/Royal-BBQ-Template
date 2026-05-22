@@ -105,12 +105,16 @@ export default function MenuSection() {
         >
           {/* Displays the first set of menu items */}
           {bbqMenu.slice(0, 3).map((menuItem) => (
-            <BBQItem menuItem={menuItem} item={item} key={menuItem.id} />
+            <motion.div variants={item} key={menuItem.id}>
+              <BBQItem menuItem={menuItem} key={menuItem.id} />
+            </motion.div>
           ))}
           {/* Displays the fourth menu item only on smaller screens */}
           <div className="lg:hidden">
             {bbqMenu.slice(3, 4).map((menuItem) => (
-              <BBQItem menuItem={menuItem} item={item} key={menuItem.id} />
+              <motion.div variants={item} key={menuItem.id}>
+              <BBQItem menuItem={menuItem} key={menuItem.id} />
+            </motion.div>
             ))}
           </div>
         </motion.div>
@@ -123,7 +127,9 @@ export default function MenuSection() {
         >
           {/* Displays the fifth and sixth menu items */}
           {bbqMenu.slice(3, 5).map((menuItem) => (
-            <BBQItem menuItem={menuItem} item={item} key={menuItem.id} />
+            <motion.div variants={item} key={menuItem.id}>
+              <BBQItem menuItem={menuItem} key={menuItem.id} />
+            </motion.div>
           ))}
         </motion.div>
         <motion.div
@@ -135,7 +141,9 @@ export default function MenuSection() {
         >
           {/* Mobile Screen */}
           {bbqMenu.slice(4, 6).map((menuItem) => (
-            <BBQItem menuItem={menuItem} item={item} key={menuItem.id} />
+            <motion.div variants={item} key={menuItem.id}>
+              <BBQItem menuItem={menuItem} key={menuItem.id} />
+            </motion.div>
           ))}
         </motion.div>
       </div>

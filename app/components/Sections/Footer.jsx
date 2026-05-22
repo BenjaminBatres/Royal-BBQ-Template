@@ -106,7 +106,7 @@ export default function Footer() {
             duration: 0.8,
             delay: 0.3,
           }}
-          className="flex flex-wrap gap-y-7 justify-between items-center mb-10"
+          className="flex flex-wrap gap-7 justify-between items-center mb-10"
         >
           {contactInfo.map((info, id) => (
             <div key={id} className="flex items-center gap-4">

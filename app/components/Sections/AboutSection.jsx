@@ -23,12 +23,12 @@ export default function AboutSection() {
           <Image
             src={AboutImg1}
             alt=""
-            className=" h-full md:w-full xl:h-55 object-cover"
+            className="h-full md:w-full xl:h-55 object-cover"
           />
           <Image
             src={AboutImg2}
             alt=""
-            className=" md:w-full h-full lg:h-55 object-cover"
+            className="md:w-full h-full lg:h-55 object-cover"
           />
         </motion.div>
         <motion.div
