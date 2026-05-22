@@ -1,7 +1,7 @@
 "use client";
 import Header from "../../components/Header";
 import React, { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import bbqMenu from "../../data/bbq-menu";
 import Footer from "@/app/components/Sections/Footer";
 import BBQItem from "@/app/components/ui/BBQItem";
@@ -20,6 +20,10 @@ export default function Page() {
   const [start, end] = range;
 
   const productName = bbqMenu.find((item) => item.id === id)?.name;
+  const producId = bbqMenu.find((item) => item.id === id)?.id;
+  if (id !== producId) {
+    notFound()
+  }
   return (
     <>
       <Header />
