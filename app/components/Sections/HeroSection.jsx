@@ -65,7 +65,8 @@ export default function HeroSection() {
                 Taste our most royal BBQ
               </motion.h2>
 
-              <motion.button
+              <motion.a
+                href="/menu"
                 variants={{
                   hidden: { opacity: 0, y: 125 },
                   visible: { opacity: 1, y: 0 },
@@ -83,7 +84,7 @@ export default function HeroSection() {
                     <BsArrowRight />
                   </span>
                 </div>
-              </motion.button>
+              </motion.a>
             </motion.div>
           </AnimatePresence>
         </div>

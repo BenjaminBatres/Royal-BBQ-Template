@@ -58,11 +58,11 @@ export default function MenuSection() {
           transition={{
             duration: 0.7,
           }}
-          className="text-orange uppercase font-semibold mb-4"
+          className="text-orange uppercase text-center md:text-left font-semibold mb-4"
         >
           Our Menu
         </motion.h3>
-        <div className="flex flex-col gap-7 md:flex-row justify-between items-center border-b border-zinc-600 pb-6 mb-12">
+        <div className="flex flex-col gap-7 flex-wrap md:flex-row justify-between items-center border-b border-zinc-600 pb-6 mb-12">
           <motion.h2
             initial={{ opacity: 0, x: -120 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +70,7 @@ export default function MenuSection() {
             transition={{
               duration: 0.7,
             }}
-            className="text-5xl uppercase font-bold font-cormorant-garamond "
+            className="text-5xl uppercase font-bold font-cormorant-garamond text-center"
           >
             Delicious food menu
           </motion.h2>
@@ -81,7 +81,7 @@ export default function MenuSection() {
             transition={{
               duration: 0.5,
             }}
-            href={"/"}
+            href={"/menu"}
             className='uppercase font-semibold py-3 px-6 bg-orange rounded-full overflow-hidden group flex gap-2 items-center z-1 relative transition-all duration-250 ease-linear before:content-[""] before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:rounded-full before:bg-white before:transition-all before:-z-1 before:duration-300 before:ease-linear hover:before:w-full hover:text-orange w-fit'
           >
             View All Menu
