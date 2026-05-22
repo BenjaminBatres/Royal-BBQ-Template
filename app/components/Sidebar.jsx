@@ -1,7 +1,19 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Sidebar({ isOpen, setIsOpen, links, socials }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   return (
     <div className="relative">
       <div
